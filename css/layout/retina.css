@@ -1,0 +1,11 @@
+.hero {
+    background-image: url(../images/Dark-bg-mobile.jpg);
+    padding: 88px 0 88px 0px;
+    background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mobile.jpg); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover; 
+    margin: 0 auto;
+  }
+
