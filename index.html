@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/base/common.css">
+    <link rel="stylesheet" href="./css/base/container.css">
+    <link rel="stylesheet" href="./css/layout/header.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +30,16 @@
                     <li class="menu-item"><a href="" class="menu-link">Contacts</a></li>
                 </ul>
             </nav>
+            <button class="open-mobile-menu-btn">
+                <svg
+                  class="open-mobile-menu-icon"
+                  width="24"
+                  height="24"
+                  aria-label="mobile menu open icon"
+                >
+                  <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+              </button>
             <address class="contacts">
                 <ul class="contacts-list">
                     <li class="contacts-item"><a href="mailto:info@devstudio.com"
@@ -40,15 +53,15 @@
 
     <main>
 
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container hero-container">
                 <h1 class="hero-text">Effective Solutions
                     for Your Business</h1>
                 <button type="button" class="hero-button">Order Service</button>
             </div>
-        </section>
+        </section> -->
 
-        <section class="features">
+        <!-- <section class="features">
             <div class="container features-container">
                 <h2 class="visually-hidden">Features</h2>
                 <ul class="features-list">
@@ -92,9 +105,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="team">
+        <!-- <section class="team">
             <div class="container team-container">
                 <h2 class="team-heading">Our Team</h2>
                 <ul class="team-list">
@@ -200,9 +213,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="portfolio">
+        <!-- <section class="portfolio">
             <div class="container pottfolio-container">
                 <h2 class="portfolio-heading">Our Portfolio</h2>
                 <ul class="portfolio-list">
@@ -274,10 +287,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
 
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
         <div class="container footer-container">
             <div class="footer-text-container">
                 <a href="./index.html" class="footer-link">Web<span class="footer-logo-sekond-color">Studio</span></a>
@@ -318,12 +331,12 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Backrop whith modal window -->
 
-    <!-- <div class="backdrop"> -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
+    <!-- <div class="backdrop is-open"> -->
         <div class="modal">
             <button class="close-btn" type="button">
                 <svg class="close-btn-icon" width="8" height="8" aria-label="modal close icon">
@@ -387,6 +400,50 @@
             </form>
         </div>
     </div>
+
+     <!-- MOBILE MENU -->
+     <div class="mobile-menu">
+     <!-- <div class="mobile-menu is-open"> -->
+        <button class="close-menu-btn" type="button">
+            <svg class="close-btn-icon mobile-menu-close-icon" width="8" height="8" aria-label="modal close icon">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav>
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-item list"><a href="./index.html" class="mobile-menu-item-link link mobile-menu-item-link-chousen">Studio</a></li>
+                <li class="mobile-menu-item list"><a href="" class="mobile-menu-item-link link">Portfolio</a></li>
+                <li class="mobile-menu-item list"><a href="" class="mobile-menu-item-link link">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <ul class="contacts-menu-list">
+            <li class="contacts-menu-item"><a href="mailto:info@devstudio.com"
+                    class="contacts-menu-link">info@devstudio.com</a></li>
+            <li class="contacts-menu-item"><a href="tel:+110001111111" class="contacts-menu-link">+11 (000) 111-11-11</a>
+            </li>
+        </ul>
+
+        <ul class="menu-item-social">
+            <li class="menu-item-social-icon"><a href="" class="menu-social-link"><svg
+                        class="menu-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg></a></li>
+            <li class="menu-item-social-icon"><a href="" class="social-link"><svg
+                        class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg></a></li>
+            <li class="menu-item-social-icon"><a href="" class="social-link"><svg
+                        class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg></a></li>
+            <li class="menu-item-social-icon"><a href="" class="social-link"><svg
+                        class="social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg></a></li>
+        </ul>
+      </div> 
+
 </body>
 
 </html>
