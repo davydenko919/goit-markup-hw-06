@@ -5,12 +5,12 @@
     padding-right: 15px;
   } */
 
-.container {
+/* .container {
   padding-left: 16px;
   padding-right: 16px;
-}
+} */
 
-@media screen and (min-width: 375px) {
+/* @media screen and (min-width: 375px) {
   .container {
     width: 100%;
   }
@@ -18,18 +18,18 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 736px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1168px) {
   .container {
-    max-width: 1158px;
+    max-width: 1440px;
     margin: 0 auto;
     margin-right: auto;
     margin-left: auto;
   }
-}
+} */
 
 /* .section {
     padding-top: 60px;
