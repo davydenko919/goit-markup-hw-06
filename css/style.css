@@ -525,6 +525,7 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 72px 24px;
   }
 
   .features-item-head {
@@ -544,6 +545,7 @@ body {
   .features-list {
     flex-wrap: nowrap;
     justify-content: normal;
+    gap: 24px;
   }
 
   .icon-container {
@@ -559,7 +561,7 @@ body {
   }
 
   .features-item-text {
-    font-weight: 500;
+    font-weight: 400;
   }
 }
 
@@ -602,7 +604,7 @@ body {
 .team-list {
   background-color: #f4f4fd;
   display: flex;
-  gap: 24px;
+  gap: 72px;
   flex-direction: column;
   align-items: center;
 }
@@ -816,7 +818,7 @@ body {
     width: 356px;
   }
   .portfolio-list {
-    gap: 62px 24px;
+    gap: 72px 24px;
   }
 
   .portfolio-img {
@@ -827,19 +829,27 @@ body {
 
 @media screen and (min-width: 1168px) {
   .portfolio-list-item {
-    width: calc((100% - 48px) / 3);
+    width: 360px;
+  }
+
+  .portfolio-list {
+    gap: 48px 24px;
   }
 
   .portfolio-img {
     width: 360px;
     height: 300px;
   }
+
 }
 
 /* footer */
 
 .footer-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:72px;
 }
 
 .page-footer {
@@ -900,7 +910,6 @@ body {
   display: inline-block;
   text-align: center;
   width: 100%;
-  margin-top: 72px;
 }
 
 .footer-item-social {
@@ -943,6 +952,7 @@ body {
   display: inline-block;
   text-align: center;
   width: 100%;
+  margin-bottom: 16px;
 }
 
 .footer-form {
@@ -1003,18 +1013,18 @@ body {
   .page-footer {
     display: flex;
     align-items: center;
-    padding: 0;
+    padding: 96px 0;
   }
 
   .footer-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
     gap: 72px 24px;
     margin-left: auto;
     margin-right: auto;
     width: 528px;
-    padding-bottom: 96px;
   }
 
   .footer-link {
@@ -1045,6 +1055,7 @@ body {
     width: 100%;
     margin-top: 72px; */
     text-align: start;
+    margin-bottom: 16px;
   }
 
   .footer-form {
@@ -1067,6 +1078,7 @@ body {
 @media screen and (min-width: 1168px) {
   .footer-container {
     display: flex;
+    flex-direction: row;
     align-items: baseline;
     margin-left: auto;
     margin-right: auto;
@@ -1075,6 +1087,10 @@ body {
     /* padding-left: 24px;
     padding-right: 24px; */
     gap: 0px;
+  }
+
+  .page-footer{
+    padding: 100px 0;
   }
 
   .footer-link {
@@ -1092,11 +1108,15 @@ body {
     text-align: start;
   }
 
+  .footer-social-container{
+    margin: 0;
+  }
+
   .footer-social-text {
     /* display: inline-block;
     text-align: center; 
-    width: 100%;
-    margin-top: 72px; */
+    width: 100%;*/
+    margin-top: 0px; 
   }
 
   .footer-form-text {
